@@ -1,9 +1,14 @@
 from model.atendente import Atendente
 from model.cor_escala import CorEscala
 
+listaCores = [CorEscala.RED, CorEscala.GREEN, CorEscala.GREY]
+
+def declarar(cor: CorEscala):
+    cor.apresentar("declarar")
+
 if __name__ == "__main__":
-    atendente = Atendente("Carla")
-    atendente.apresentar()
-    CorEscala.RED.apresentar()
-    CorEscala.GREEN.apresentar()
-    CorEscala.BLUE.apresentar()
+    example = {
+        "nome": "fulano",
+        "idade": "200Anos"
+    }
+    print(list(example))
